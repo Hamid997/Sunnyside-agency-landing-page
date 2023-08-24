@@ -15,16 +15,14 @@
     /* font size */
     --font-size: 18px;
     /* font family */
-    --font-Barlow: "Barlow", sans-serif;
-    --font-Fraunces: "Fraunces", sans-serif;
+    --font-Barlow: "Barlow";
+    --font-Fraunces: "Fraunces";
 }
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 body {
-    font-family: Arial, sans-serif;
     font-family: 18px;
 }
 
@@ -32,10 +30,9 @@ body {
 .header {
     display: flex;
     align-items: center;
-    background-color: beige;
     padding: 30px;
     flex-direction: column;
-    color: white;
+    color: var(--White);
     gap: 2rem;
     background-image: url("images/desktop/image-header.jpg");
     background-size: cover;
@@ -82,6 +79,7 @@ body {
     border-radius: 100px;
     font-size: 1.2rem;
     text-decoration: none;
+    font-family: var(--font-Barlow),sans-serif;
     font-weight: 600;
 }
 .navLink:hover {
@@ -97,14 +95,14 @@ body {
     color: #23303e;
     background-color: white;
     border-radius: 100px;
-    font-family: "Fraunces", serif;
+    font-family: var(--font-Fraunces),serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1.2rem;
 }
 .header h1 {
     font-size: 3rem;
-    font-family: "Fraunces", serif;
+    font-family: var(--font-Fraunces),serif;
     font-weight: 900;
     color: white;
     line-height: 1.2;
@@ -135,7 +133,7 @@ body {
 }
 .content-right h2 {
     font-size: 2.8rem;
-    font-family: "Fraunces", serif;
+    font-family: var(--font-Fraunces),serif;
     font-weight: 900;
     color: #23303e;
     line-height: 1.2;
@@ -146,13 +144,13 @@ body {
     color: #818498;
     font-size: 1.15rem;
     line-height: 1.5;
-    font-family: 'Barlow',sans-serif;
+    font-family: var(--font-Barlow),sans-serif;
     font-weight: 600;
 }
 .show-more {
     text-decoration: none;
     display: inline-block;
-    font-family: "Fraunces", serif;
+    font-family: var(--font-Fraunces),serif;
     font-weight: 900;
     color: #23303e;
     position: relative;
@@ -174,10 +172,10 @@ body {
     transition: all 0.5s;
 }
 .show-more-yellow::after {
-    background-color: #fad400;
+    background-color: var(--Yellow);
 }
 .show-more-red::after {
-    background-color: #fe7867;
+    background-color: var(--Soft-red);
 }
 .show-more:hover::after {
     opacity: 1;
@@ -202,7 +200,7 @@ body {
     padding: 400px 30px 50px;
 }
 .dual-content-block h2 {
-    font-family: "Fraunces", serif;
+    font-family: var(--font-Fraunces),serif;
     font-weight: 900;
     font-size: 2rem;
     margin-bottom: 20px;
@@ -214,10 +212,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
-    font-family: "Barlow", sans-serif;
+    font-family: var(--font-Barlow),sans-serif;
 }
 .content-design {
-    color: #25564b;
+    color: var(--Dark-desaturated-cyan);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -228,7 +226,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url(images/desktop/image-photography.jpg);
-    color: #19536b;
+    color: var(--Dark-blue);
 }
 
 /* testimonials section */
@@ -243,10 +241,10 @@ body {
     font-size: 1.6rem;
     margin-bottom: 5rem;
     text-transform: uppercase;
-    font-family: "Fraunces", serif;
+    font-family: var(--font-Fraunces),serif;
     font-weight: 900;
     text-align: center;
-    color: #a7abae;
+    color: var(--Dark-grayish-blue);
     letter-spacing: 4px;
 }
 .testimonials {
@@ -267,22 +265,22 @@ body {
 }
 .testimonial h3 {
     font-size: 1.2rem;
-    margin-bottom: 0.8rem;    
-    font-family: "Fraunces", serif;
+    margin-bottom: 0.8rem;
+    font-family: var(--font-Fraunces),serif;
     font-weight: 900;
-    color: #23303e;
+    color: var(--Very-dark-desaturated-blue);
 }
 .testimonial p {
     margin-bottom: 3rem;
     max-width: 350px;
-    color: #5a636c;
+    color: var(--Very-dark-grayish-blue);
     font-size: 1.1rem;
     line-height: 1.7;
-    font-family: 'Barlow',sans-serif;
+    font-family: var(--font-Barlow),sans-serif;
 }
 .testimonial .second-p{
     font-size: 1rem;
-    color: #a7abae;
+    color: var(--Grayish-blue);
 }
 
 /* four blocks section */
@@ -334,7 +332,8 @@ body {
     margin-bottom: 10px;
 }
 .footer-nav ul li a {
-    color: #458c7e;
+    font-family: var(--font-Barlow),sans-serif;
+    color: var(--Dark-moderate-cyan);
     text-decoration: none;
     font-size: 1.2rem;
     transition: all 0.5s;
@@ -350,7 +349,7 @@ body {
     margin-right: 10px;
 }
 .social-icons li a {
-    color: #458c7e;
+    color: var(--Dark-moderate-cyan);
     text-decoration: none;
     font-size: 1.3em;
     transition: all 0.5s;
@@ -412,7 +411,7 @@ body {
         width: 85vw;
         top: 80px;
         padding: 20px 0;
-        background-color: #fff;
+        background-color: var(--White);
         box-shadow: 0px 2px 10px -5px rgba(71, 71, 71, 0.64);
     }
     .menu ul::after{
@@ -424,7 +423,7 @@ body {
         height: 0;
         border-style: solid;
         border-width: 0 0 20px 20px;
-        border-color: transparent transparent #ffffff transparent;
+        border-color: transparent transparent var(--White) transparent;
     }
     .menu ul li{
         margin: 15px 0;
